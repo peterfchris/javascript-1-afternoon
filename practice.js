@@ -26,7 +26,7 @@ var greatestFear
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-var devMountainGoal
+var devMountainGoal = null
 
 //////////////////PROBLEM 6////////////////////
 
@@ -45,7 +45,7 @@ function greeting(name) {
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-var newGreeting = function greeting(name) {
+var newGreeting = function (name) {
   return "Hello, " + name
 }
 
@@ -68,7 +68,7 @@ var dog = {
   name: "George",
   color: "black", 
   age: 4, 
-  goodBoy: False
+  goodBoy: true
 }
 
 //...access the dog's name from the object and assign it to a
@@ -86,12 +86,12 @@ var devMountainClassPet = dog.name
 // with NAMEPARAM being the name parameter being passed in
 
 function nameCheck(name) {
-  if (name === Steven) {
+  if (name === 'Steven') {
     return 'What is up Steven?'
-  } else if (name === Bryan) {
+  } else if (name === 'Bryan') {
     return 'Hey Bryan!'
   } else {
-    'Cool name, ' + name
+    return `Cool name, ${name}`
   }
 }
 
@@ -124,7 +124,7 @@ function faveColorFinder(color) {
     return 'red is a great color'
   } else if (color === 'green') {
     return 'green is a solid favorite color'
-  } else if (color === black) {
+  } else if (color === 'black') {
     return 'so trendy'
   } else {
     return 'you need to evaluate your favorite color choice'
